@@ -1,6 +1,9 @@
+Portions are copyrighted by thier respective owners it is commented in code where those portions are.
+The files audioRecorder.js and audioRecorderWorker.js are based on Recorder.js, which is under the MIT license (Copyright © 2013 Matt Diamond). Some modifications of those files are under MIT license Copyright © 2013-2016 Sylvain Chevalier
+
 The MIT License (MIT)
 
-Copyright (c) 2016 J
+Copyright (c) 2016 Justin Overton
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +22,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
