@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>audio input</title>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" />
+    <style>
+      .audio-recording .audio-record * {
+      	-webkit-animation: pulse 1s linear infinite;
+      	-moz-animation: pulse 1s linear infinite;
+      	-ms-animation: pulse 1s linear infinite;
+      	animation: pulse 1s linear infinite;
+      	color: red;
+      }
+      
+      .audio-waveform {
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Audio Input Demo</h2>
+    <p>
+      Tested on Chrome. Example uses bootstrap for styling, but you can use whatever you want.
+    </p>
+
+    <div data-audio-input
+         data-audio-max-duration="15"
+         data-audio-sample-rate="16000"
+         onchange="recordingChange(this.polymathAudioControl.value)">
+      
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" data-audio-play>
+                    <span class="glyphicon glyphicon-play"></span>
+                  </button>
+                </span>
+                <canvas class="form-control form-control-static" data-audio-waveform></canvas>
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" data-audio-record>
+                    <span class="glyphicon glyphicon-record"></span>
+                  </button>
+                </span>
+              </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+          </div>
+      </div>
+      
+    </div>
+    <script>
+      function recordingChange(o) {
+        //can even get a regular onchange event
+      }
+    </script>
+    <script src="audio.js"></script>
+    <script src="audioRecorder.js"></script>
+  </body>
+</html>
