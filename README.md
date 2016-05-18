@@ -2,6 +2,10 @@
 
 A simple control to enable capturing microphone audio as a sort of input element.
 
+# Demo
+
+https://justinoverton.github.io/AudioInputControl/
+
 # Usage
 
 You need all three js files:
